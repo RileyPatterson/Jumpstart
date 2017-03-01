@@ -1,0 +1,36 @@
+puts"Welcome to Ada's Computer Candy Machine!"
+puts"(All candy provided is virtual.)"
+
+print"How much money do ya got? $"
+money = gets.chomp
+
+#translate user input into a float
+
+puts "$" + money + ", that's all?"
+puts "Well, lemme tell ya what we got here."
+
+puts "A $0.65 Twix"
+puts "B $0.50 Chips"
+puts "C $0.75 Nutter Butter"
+puts "D $0.65 Peanut Butter Cup"
+puts "E $0.55 Juicy Fruit Gum"
+
+print "So, What'll ya have?"
+selection = gets.chomp
+
+# I need to convert the answer in letter form into its monitary equivilant
+
+A = 0.65 
+B = 0.50
+C = 0.75
+D = 0.65
+E = 0.55
+
+# puts "You're broke. Take your $" + money + " elsewhere!"
+# if selection > money
+
+# puts "Thank you for purchasing candy through us."
+# if selection =< money
+# (use "money % selection" to find change)
+
+puts"Thank you for playing!"
