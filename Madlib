@@ -1,0 +1,33 @@
+puts"Welcome to my MadLib program! Please enter in some information below:"
+
+print"Please give me a name:"
+first_name = gets.chomp
+
+print"Please give me an food:"
+second_food = gets.chomp
+
+print"Please give me an noun:"
+third_noun = gets.chomp
+
+print"Please give me another adjective:"
+adjective_2 = gets.chomp
+
+print"Please give me an food (plural):"
+food = gets.chomp
+
+print"Please give me an noun (plural):"
+noun_2 = gets.chomp
+
+print"Please give me an verb ending in -ed:"
+verb = gets.chomp
+
+print"Lastly, please give me another noun:"
+noun_3 = gets.chomp
+
+puts"HERE'S YOUR MADLIB:"
+puts "come on over to "+ first_name + "'s Ice Cream Parlor, where"
+print "you can try our famous " + second_food + " flavor ice cream!"
+
+# complete madlib
+
+puts"Thank you for playing!"
