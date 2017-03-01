@@ -1,0 +1,14 @@
+puts"welcome to my election voting program"
+puts"Election canidates are: Donald Duck, Minnie, Mouse, and Goofy."
+
+votes = Array.new
+(1..3).each do |num|
+  print"Vote ##{num}:"
+  votes = gets.chomp
+#store each value in an array
+end
+
+# count number of each value in array to get the votes
+
+puts"ELECTION RESULTS...."
+puts"Vote Summary:"
