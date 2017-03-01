@@ -1,0 +1,42 @@
+puts"Welcome to Ada's Computer Candy Machine!"
+puts"(All candy provided is virtual.)"
+
+print"How much money do ya got? $"
+origonal_money = gets.chomp.to_f
+
+#translate user input into a float
+
+puts "$ #{origonal_money}, that's all?"
+puts "Well, lemme tell ya what we got here."
+
+puts "A $0.65 Twix"
+puts "B $0.50 Chips"
+puts "C $0.75 Nutter Butter"
+puts "D $0.65 Peanut Butter Cup"
+puts "E $0.55 Juicy Fruit Gum"
+
+print "So, What'll ya have?"
+variable = gets.chomp
+
+if variable == "C"
+  candy_cost = 0.75
+elsif variable == "A"
+  candy_cost = 0.65
+elsif variable == "B"
+  candy_cost = 0.50
+elsif variable = "D"
+  candy_cost = 0.65
+elsif variable = "E"
+else 
+  puts "That is an incorrect slection"
+end
+
+change = origonal_money - candy_cost
+
+if candy_cost > origonal_money
+  puts "You're broke. take your $ #{origonal_money} and go elsewhere!"
+elsif candy_cost == origonal_money
+  puts "Thank you for purchacing candy through us! Please take your candy!"
+else candy_cost < origonal_money
+  puts "Thank you for purchasing candy through us! Please take your candy and your $ #{change} !"
+end
