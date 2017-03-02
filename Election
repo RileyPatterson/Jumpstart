@@ -1,0 +1,33 @@
+puts"welcome to my election voting program"
+puts"Election canidates are: Donald Duck, Minnie Mouse, and Goofy."
+
+#create a new array to store the user-inputed data
+total_votes = []
+
+#remember to change back to 10
+(1..10).each do |num|
+  print"Vote ##{num}:"
+  total_votes.push(gets.chomp)
+#store each input value at the end of a the total_votes array
+end
+
+#count number of occurences each value (Donald, Minnie, Goofy) in array 
+goofy = total_votes.count("Goofy")
+minnie = total_votes.count("Minnie")
+donald = total_votes.count("Donald")
+
+puts"ELECTION RESULTS...."
+puts"Vote Summary:"
+puts "Goofy - #{goofy} vote(s)"
+puts "Minnie Mouse - #{minnie} vote(s)"
+puts "Donald Duck - #{donald} vote(s)"
+
+#calculate frequency to decide winner with if statments
+
+if goofy > donald && goofy > minnie
+  puts "Winner: Goofy!"
+elsif donald > goofy && donald > minnie
+  puts "Winner: Donald Duck!"
+else minnie > goofy && minnie > donald
+    puts "Winner: Minnie Mouse!"
+end
